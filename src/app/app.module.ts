@@ -9,16 +9,23 @@ import { servidorReducer } from './store/reducers/servidor.reducer';
 import { ServidorEffects } from './store/efects/servidor.effects';
 import { EffectsModule } from '@ngrx/effects';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { ListComponent } from './list/list.component';
+import { ServerModule } from '@angular/platform-server';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     StoreModule.forRoot({servidores: servidorReducer}),
-    EffectsModule.forRoot([ServidorEffects])
+    EffectsModule.forRoot([ServidorEffects]),
+    ServerModule,
+    
   ],
   providers: [
     provideClientHydration(withEventReplay()),

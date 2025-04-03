@@ -1,0 +1,59 @@
+/* Estilização geral */
+.all-container {
+  padding: 20px;
+}
+
+.toolbar {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.botao-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.pesquisa-container input {
+  width: 300px;
+}
+
+/* Estilização da tabela */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Botões de ação */
+.acoes-botoes button {
+  margin-right: 5px;
+}
+
+.acoes-botoes .btn {
+  padding: 5px 10px;
+  font-size: 14px;
+}
